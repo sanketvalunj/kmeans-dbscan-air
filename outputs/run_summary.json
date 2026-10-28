@@ -1,0 +1,141 @@
+{
+  "raw_shape": [
+    29531,
+    16
+  ],
+  "n_cities_raw": 26,
+  "pollutants_used": [
+    "PM2.5",
+    "PM10",
+    "NO",
+    "NO2",
+    "NOx",
+    "NH3",
+    "CO",
+    "SO2",
+    "O3",
+    "Benzene",
+    "Toluene",
+    "Xylene"
+  ],
+  "cleaning": {
+    "rows_before_cleaning": 29531,
+    "rows_after_cleaning": 27850,
+    "rows_removed": 1681,
+    "negative_values_set_to_nan": 0,
+    "duplicate_city_date_rows_removed": 0
+  },
+  "missing_pct_before": {
+    "PM2.5": 15.57,
+    "PM10": 37.72,
+    "NO": 12.13,
+    "NO2": 12.14,
+    "NOx": 14.17,
+    "NH3": 34.97,
+    "CO": 6.97,
+    "SO2": 13.05,
+    "O3": 13.62,
+    "Benzene": 19.04,
+    "Toluene": 27.23,
+    "Xylene": 61.32
+  },
+  "missing_pct_after_cleaning": {
+    "PM2.5": 10.48,
+    "PM10": 33.97,
+    "NO": 6.83,
+    "NO2": 6.85,
+    "NOx": 9.17,
+    "NH3": 31.09,
+    "CO": 2.2,
+    "SO2": 7.81,
+    "O3": 8.45,
+    "Benzene": 14.16,
+    "Toluene": 22.85,
+    "Xylene": 58.99
+  },
+  "city_level": {
+    "n_cities": 26,
+    "k_values_tested": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "inertias": [
+      239.29371266612515,
+      199.8154996493541,
+      163.52721365214177,
+      140.53372313492235,
+      115.8425958344431,
+      101.60681505122375,
+      86.8572945428834
+    ],
+    "elbow_suggested_k": 4,
+    "k_used": 4,
+    "silhouette": 0.1988463373613298,
+    "pca_explained_variance": [
+      0.37757328390666195,
+      0.17315839196920993
+    ],
+    "cluster_sizes": {
+      "0": 14,
+      "1": 6,
+      "2": 5,
+      "3": 1
+    }
+  },
+  "daily_level": {
+    "n_observations": 27850,
+    "k_values_tested": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "inertias": [
+      263774.7629346416,
+      237486.29679246884,
+      221523.06869047374,
+      206639.8938840027,
+      194191.57197679038,
+      185357.92420216714,
+      178421.88774087472,
+      172075.73959297527,
+      165881.30503423823
+    ],
+    "elbow_suggested_k": 6,
+    "k_used": 6,
+    "silhouette": 0.15047367739121792,
+    "silhouette_on_sample": true,
+    "pca_explained_variance": [
+      0.340813869968804,
+      0.14608416228841786
+    ],
+    "cluster_sizes": {
+      "0": 10754,
+      "1": 3157,
+      "2": 4363,
+      "3": 4387,
+      "4": 4142,
+      "5": 1047
+    }
+  },
+  "dbscan": {
+    "sample_size": 6000,
+    "total_observations": 27850,
+    "eps": 2.3185319004808,
+    "eps_from_kdistance": 2.3185319004808,
+    "min_samples": 10,
+    "n_clusters_excluding_noise": 3,
+    "n_noise": 190,
+    "noise_fraction": 0.03166666666666667
+  }
+}
